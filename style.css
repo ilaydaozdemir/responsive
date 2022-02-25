@@ -219,6 +219,7 @@ ul {
 #nav .collapse {
   max-height: 0px;
   overflow-y: hidden;
+  transition: all 0.9s ease;
 }
 #nav .collapse ul {
   flex-direction: column;
@@ -241,7 +242,7 @@ ul {
 #nav .flex-initial ul button {
   display: none;
 }
-.active{
-    max-height: 50vh;
+.active {
+  max-height: 50vh !important;
 }
 /*--------/Navigation Style---------*/
