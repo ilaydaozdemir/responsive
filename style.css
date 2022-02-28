@@ -92,7 +92,6 @@ ul {
 }
 .text-lg {
   font-size: 2.2em;
-
 }
 .text-xl {
   font-size: 3em;
@@ -191,7 +190,6 @@ ul {
 }
 .d-block {
   display: block;
- 
 }
 .grid {
   display: grid;
@@ -220,6 +218,9 @@ ul {
   .container {
     max-width: 768px;
   }
+  .md-text-left {
+    text-align: left;
+  }
 }
 /*for large screen lg(1024px)*/
 @media (min-width: 1024px) {
@@ -241,8 +242,11 @@ ul {
   .active {
     max-height: 100% !important;
   }
-  .lg-cols-3{
-      grid-template-columns: repeat(3,minmax(0,1fr));
+  .lg-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lg-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 /*for large screen xl(1280px)*/
@@ -308,15 +312,55 @@ ul {
   background-position-x: right;
   z-index: -99;
 }
-#site-main .banner-area .banner-title{
-    height: 95vh;
-    padding-top: 16rem;
+#site-main .banner-area .banner-title {
+  height: 95vh;
+  padding-top: 16rem;
 }
 
 /*--------/Banner area Style---------*/
 
 /*--------agency area Style---------*/
-#site-main .agency-area{
-    padding: 5em 0;
+#site-main .agency-area {
+  padding: 5em 0;
 }
 /*--------/agency area Style---------*/
+
+/*--------didital life Style---------*/
+#site-main .life-area > .grid {
+  column-gap: 10em;
+}
+#site-main .life-area .grid-images {
+  display: grid;
+  grid-template-columns: repeat(16, minmax(10px, 1fr));
+  grid-template-rows: repeat(8, minmax(100px, 1fr));
+}
+#site-main .life-area .grid-images .item-one {
+  background: var(--text-gray);
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background: var(--bg-image1) no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  filter: blur(1px);
+}
+#site-main .life-area .grid-images .item-two {
+  background: var(--text-gray);
+  grid-column-start: 9;
+  grid-column-end: 16;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background: var(--bg-image2) no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  filter: blur(1px);
+}
+#site-main .life-area .grid-images .item-tree {
+  grid-area: 3/4/8/14;
+  background: var(--bg-image3) no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  z-index: 99;
+}
+/*--------/didital life Style---------*/
