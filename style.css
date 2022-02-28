@@ -8,7 +8,7 @@
   --text-dark: #1a3260;
   --text-dark2: #1a3760d4;
   --text-red: #ff4d6d;
-  --box-shadow: 0px 0px 50px 50px rgb(000/60%);
+  --box-shadow: 0px 0px 50px 50px rgb(#0000/60%);
   --bg-blue: rgb(249, 243, 255);
   --bg-red: rgb(254, 247, 252);
   --bg-yellow: rgb(255, 255, 246);
@@ -221,6 +221,9 @@ ul {
   .md-text-left {
     text-align: left;
   }
+  .md-mx-initial {
+    margin: initial;
+  }
 }
 /*for large screen lg(1024px)*/
 @media (min-width: 1024px) {
@@ -325,7 +328,7 @@ ul {
 }
 /*--------/agency area Style---------*/
 
-/*--------didital life Style---------*/
+/*--------digital life Style---------*/
 #site-main .life-area > .grid {
   column-gap: 10em;
 }
@@ -363,4 +366,30 @@ ul {
   border-radius: 8px;
   z-index: 99;
 }
-/*--------/didital life Style---------*/
+/*--------/digital life Style---------*/
+
+/*--------counting area Style---------*/
+#site-main .counting-area {
+  padding: 7em 0;
+}
+#site-main .counting-area .grid-one p {
+  width: 80%;
+}
+#site-main .counting-area .count-box {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+#site-main .counting-area .count-box .grid {
+  display: inline-grid;
+  grid-gap: 2px;
+  border-radius: 20px;
+  background-color: var(--text-light);
+  box-shadow: var(--box-shadow);
+}
+#site-main .counting-area .count-box .grid > div {
+  background-color: white;
+  padding: 2em 2.5em;
+  text-align: center;
+}
+/*--------counting area Style---------*/
